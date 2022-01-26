@@ -1,34 +1,77 @@
 #navbar{
-    position:fixed;
-      height: 100%;
-      width: 100px;
-      border-color: black;
-      top:0;
-      left:0;
-      overflow: hidden;}
+  position: fixed;
+  height: 100%;
+  width: 100px;
+  border-color: black;
+  top:0;
+  left:0;
+  overflow: hidden;
+  margin-top: 0%;
+}
+
+.nav-link {
+  border-color: black;
+  border-radius: 10%;
+  padding: 10px;
+  background-color: lightgray;
+  text-decoration: none;
+  margin-top: 8%;
+  display: list-item;
+}
 
 #main-doc{
-    margin-left: 120px;
-    left: 100px;
+  margin-left: 120px;
+  left: 100px;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.main-section {
+  border-color: white;
+  border-radius: 2%;
+  padding: 10px;
+  background-image: linear-gradient(rgb(240, 134, 134), rgb(211, 211, 100));
+  text-decoration: none;
+  margin-top: 8%;
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-    .center-screen {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        min-height: 100vh;
-      }
-    #navbar{
-        width: 100%;
-        height: 25%;
-        background-color: lightgreen;
-    }
-    #main-doc{
-        margin-top: 30%;
-    }
+  body {
+    background-color: lightblue;
   }
+
+  .main-section {
+    padding-top: 25%;
+  }
+
+  .center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  #navbar{
+    width: 100%;
+    height: 35%;
+    background-color: lightgreen;
+    position: fixed;
+  }
+
+  #nav-link {
+    margin-left: 10%;
+    margin-top: 0%;
+    display: inline;
+  }
+
+  #nav-buttons {
+    display: inline-block;
+  }
+
+  #main-doc{
+    margin-top: 2%;
+  }
+}
