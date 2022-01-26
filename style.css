@@ -1,0 +1,34 @@
+#navbar{
+    position:fixed;
+      height: 100%;
+      width: 100px;
+      border-color: black;
+      top:0;
+      left:0;
+      overflow: hidden;}
+
+#main-doc{
+    margin-left: 120px;
+    left: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .center-screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+      }
+    #navbar{
+        width: 100%;
+        height: 25%;
+        background-color: lightgreen;
+    }
+    #main-doc{
+        margin-top: 30%;
+    }
+  }
